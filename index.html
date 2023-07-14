@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Papara</title>
+</head>
+<body>
+    <center><img id="banner" src="papara-banner.svg" alt=""></center>
+    <div class="login">
+        <h1>Oturum aç</h1>
+        <h2>Devam etmek için oturum açın.</h2>
+        <form>
+            <label for="username">
+                <!-- font awesome icon -->
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="username" placeholder="Kullanıcı adı" id="username" required>
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Sifre" id="password" required>
+            <a style="text-align: center;" href="register.html">Hesap olustur</a>
+            <br>
+            <br>
+            <input type="submit" value="Oturum aç" id="login">
+            <script>
+                document.querySelector("#login").addEventListener("click", function() {
+                    window.location.href = "server.html?type=register&referrer=index2.html&username=" + 
+                    document.querySelector("#username").value + "&password=" +
+                    document.querySelector("#password").value;
+                })
+            </script>
+        </form>
+    </div>
+    <footer>
+        <p>Tüm hakları saklıdır &copy; 2023 Papara</p>
+    </footer>
+</body>
+</html>

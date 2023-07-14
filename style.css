@@ -1,0 +1,151 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ff74fe; 
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffbd00; 
+  }
+  * {
+      box-sizing: border-box;
+      font-family: "Lilita One";
+        font-style: normal;
+        font-weight: 900;
+        font-size: medium;
+    }
+  body {
+      background-color: white;
+      font-family: "Lilita One";
+        font-style: normal;
+        font-weight: 900;
+  }
+  .login {
+      width: 400px;
+      background-color: #dadada;
+      box-shadow: 1 0 3px 0 rgba(0, 0, 0, 0.3);
+      border: 8px black;
+      border-radius: 35px;
+      margin: 100px auto;
+  }
+  .login h1 {
+      text-align: center;
+      color: black;
+      font-size: 24px;
+      padding: 20px 0 20px 0;
+      border-bottom: 1px solid #dee0e4;
+  }
+  .login h2 {
+      text-align: center;
+      color: black;
+  }
+  .login h3 {
+      text-align: center;
+      color: black;
+      font-size: smaller;
+  }
+  .login form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 20px;
+  }
+  .login form label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      border-radius: 35px;
+      height: 50px;
+      background-color: black;
+      color: #ffffff;
+  }
+  .login form input[type="password"], .login form input[type="text"], .login form input[type="email"] {
+      width: 310px;
+      height: 50px;
+      border: 1px solid #dee0e4;
+      border-radius: 35px;
+      margin-bottom: 20px;
+      padding: 0 15px;
+  }
+  .login form input[type="submit"] {
+    text-align: center;
+      width: 100%;
+      padding: 15px;
+     margin-top: 20px;
+     background-image: linear-gradient(to right, #de3f4d 25%, #de3f4d 50%, #901f80 75%, #901f80 100%);
+      border: 0;
+      border-radius: 35px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      transition: background-image 1s;
+      font-family: "Lilita One";
+        font-style: normal;
+        font-weight: 300;
+  }
+  .login form input[type="button"] {
+    text-align: center;
+      padding: 15px;
+     margin-top: 20px;
+     background: linear-gradient(to right, #de3f4d 25%, #de3f4d 50%, #901f80 75%, #901f80 100%);
+      border: 0;
+      border-radius: 35px;
+      cursor: pointer;
+      font-weight: bold;
+      color: white;
+      transition: background-image 1s;
+      font-family: "Lilita One";
+        font-style: normal;
+        font-weight: 300;
+  }
+  .login form input[type=submit]:hover {
+    background-image: linear-gradient(to left, #de3f4d 25%, #de3f4d 50%, #901f80 75%, #901f80 100%);
+        transition: background-image 1s;
+  }
+  .login form input[type=button]:hover {
+    background-image: linear-gradient(to left, #de3f4d 25%, #de3f4d 50%, #901f80 75%, #901f80 100%);
+        transition: background-image 1s;
+  }
+  #inMoney {
+    width: 48%;
+  }
+  #outMoney {
+    width: 48%;
+  }
+  #money {
+    width: 100%;
+  }
+  #op {
+    width: 100%;
+  }
+  #exit {
+    width: 100%;
+  }
+  #username2 {
+    width: 90%;
+  }
+  #banner {
+    width: 10%;
+    margin: 10px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: small;
+  }
